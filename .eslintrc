@@ -9,6 +9,6 @@
     "no-console": "off",
     "no-alert": "off",
     "strict": "off",
-    "func-names": ["error", "as-needed"]
+    "func-names": ["error", "never"]
   }
 }

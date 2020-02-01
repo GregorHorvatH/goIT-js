@@ -28,4 +28,5 @@ const ex = getUrlParam('ex', '01');
 hw.innerText = `Module ${mod}`;
 excercise.innerText = `Excercise ${ex}`;
 script.src = `module-${mod}/hw/excercise-${ex}.js`;
+script.type = 'module';
 body.appendChild(script);

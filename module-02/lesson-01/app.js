@@ -71,12 +71,13 @@
 /* Массивы - Итерация по массиву */
 // ========================================
 // const arr = [1, 2, 3, 4, 5, 6, 7];
+
 // for (let i = 0; i < arr.length; i += 1) {
 //   /* arr[i] = 'nothing here'; */
 //   console.log(arr[i]);
-//   if (arr[i] === 5) {
-//     break;
-//   }
+//   // if (arr[i] === 5) {
+//   //   break;
+//   // }
 // }
 
 // ========================================
@@ -86,7 +87,7 @@
 // // eslint-disable-next-line
 // for (let num of numbers) {
 //   console.log(num);
-//   num = 5;
+//   num = 5; // не заменит значение
 // }
 // console.log(numbers);
 
@@ -175,9 +176,10 @@
 // const arr = [1, 2, 3, 4, 5];
 
 // console.log(arr);
-// console.log(arr.slice(0, 2));
+// console.log(arr.slice()); // копия всего массива
+// console.log(arr.slice(3)); // с индекса 3 до конца
+// console.log(arr.slice(0, 2)); // не включая последний элемент
 // console.log(arr.slice(2, 4));
-// console.log(arr.slice(3));
 
 // ========================================
 /* Массивы - splice() */
@@ -224,10 +226,20 @@
 // ========================================
 /* Массивы - concat() */
 // ========================================
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
-const arr3 = arr1.concat(arr2);
-const arr4 = [...arr1, ...arr2];
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3 = arr1.concat(arr2);
+// const arr4 = [...arr1, ...arr2];
 
-console.log(arr3);
-console.log(arr4);
+// console.log(arr3);
+// console.log(arr4);
+
+// const arr = [1, 2, 3, 4, 'abc'];
+//            0  1  2  3
+
+// console.log(arr.length);
+
+// for (let i = 0; i < arr.length; i += 1) {
+//   console.log(arr[i]);
+// }
+

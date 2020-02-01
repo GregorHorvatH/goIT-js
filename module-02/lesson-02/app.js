@@ -179,19 +179,20 @@
 // Функция должна возвращать новый массив
 // и не изменять исходный.
 // =================================
-const filterRange = (arr, min, max) => {
-  const newArray = [];
-  arr.forEach(e => {
-    if (e >= min && e <= max) {
-      newArray.push(e);
-    }
-  });
+// const filterRange = (arr, min, max) => {
+//   const newArray = [];
+//   arr.forEach(e => {
+//     if (e >= min && e <= max) {
+//       newArray.push(e);
+//     }
+//   });
 
-  return newArray;
-};
+//   return newArray;
+// };
 
-const arr = [5, 3, 8, 1];
-const filtered = filterRange(arr, 1, 4);
+// const arr = [5, 3, 8, 1];
+// const filtered = filterRange(arr, 1, 4);
 
-console.log('Original array:', arr); // 5,3,8,1 (без изменений)
-console.log('Filtered array', filtered); // 3,1 (совпадающие значения)
+// console.log('Original array:', arr); // 5,3,8,1 (без изменений)
+// console.log('Filtered array', filtered); // 3,1 (совпадающие значения)
+
