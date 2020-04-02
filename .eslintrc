@@ -9,6 +9,9 @@
     "no-console": "off",
     "no-alert": "off",
     "strict": "off",
-    "func-names": ["error", "never"]
+    "func-names": ["error", "never"],
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off"
   }
 }

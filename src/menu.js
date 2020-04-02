@@ -39,6 +39,21 @@ const modules = [
     lessons: 2,
     excercises: 1,
   },
+  {
+    number: 9,
+    lessons: 2,
+    excercises: 0,
+  },
+  {
+    number: 10,
+    lessons: 2,
+    excercises: 0,
+  },
+  {
+    number: 11,
+    lessons: 2,
+    excercises: 5,
+  },
 ];
 
 function generateMenuBlock(moduleLi, module, isLessons) {
@@ -50,7 +65,7 @@ function generateMenuBlock(moduleLi, module, isLessons) {
     const a = document.createElement('a');
     const num = i < 9 ? `0${i + 1}` : i + 1;
     const moduleNumber =
-      module.number < 9 ? `0${module.number}` : module.number;
+      module.number < 10 ? `0${module.number}` : module.number;
 
     a.href = isLessons
       ? `module-${moduleNumber}/lesson-${num}/index.html`
